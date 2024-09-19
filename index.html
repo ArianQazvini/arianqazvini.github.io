@@ -12,15 +12,16 @@
 </head>
 <body>
 
-    <!-- Menu Icon for Mobile -->
-    <div class="menu-icon" onclick="toggleNavbar()">
-        &#9776; <!-- Unicode for hamburger icon -->
+
+    <div class="menu-icon"  id="menuIcon" onclick="toggleNavbar()">
+        &#9776;
     </div>
 
 
     <div class="navbar" id="navbar">
         <ul>
             <li><a href="#education">Education</a></li>
+            <li><a href="#selected-courses">Selected Courses</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#research-experience">Research Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -58,9 +59,9 @@
             </p>
         </div>
 
-        <!-- Scroll to Top Arrow -->
+
         <div id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
-            &#8679; <!-- Unicode for up arrow icon -->
+            &#8679;
         </div>
 
 <!--        <section>-->
@@ -109,11 +110,42 @@
         </section>
 
 
+
+        <section id="selected-courses">
+                <h2>Selected Courses</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="grades-list">
+                            <li>Information Retrieval: 17.93/20.0</li>
+                            <li>Artificial Intelligence: 19.0/20.0</li>
+                            <li>Computational Intelligence: 18.0/20.0</li>
+                            <li>Linear Optimization: 20.0/20.0</li>
+                            <li>Applied Linear Algebra: 18.0/20.0</li>
+                            <li>Advanced Programming: 20.0/20.0</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="grades-list">
+                            <li>Operating Systems: 19.55/20.0</li>
+                            <li>Computer Networks: 18.5/20.0</li>
+                            <li>Software Engineering I: 20.0/20.0</li>
+                            <li>Algorithm Design: 19.0/20.0</li>
+                            <li>Data Structures and Algorithms: 19.4/20.0</li>
+                            <li>User Interface Design: 20.0/20.0</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+
+
         <section id="publications">
             <h2>Publications</h2>
             <hr>
-            <ul>
-                <li>Seyedeh Fatemeh Ebrahimi, Karim Akhavan Azari, Amirmasoud Iravani, <strong>Arian Qazvini</strong>, Pouya Sadeghi, Zeinab Taghavi, Hossein Sameti. "<strong>Sharif-MGTD at SemEval-2024 Task 8: A Transformer-Based Approach to Detect Machine Generated Text</strong>". <a href="https://aclanthology.org/2024.semeval-1.85/">[Paper]</a></li>
+            <ul class="publications-list">
+                <p>Seyedeh Fatemeh Ebrahimi, Karim Akhavan Azari, Amirmasoud Iravani, <strong>Arian Qazvini</strong>, Pouya Sadeghi, Zeinab Taghavi, Hossein Sameti. "<strong>Sharif-MGTD at SemEval-2024 Task 8: A Transformer-Based Approach to Detect Machine Generated Text</strong>". <a href="https://aclanthology.org/2024.semeval-1.85/">[Paper]</a></p>
             </ul>
         </section>
 

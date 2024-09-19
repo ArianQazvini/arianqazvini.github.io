@@ -19,7 +19,7 @@ body {
 .navbar ul {
     list-style-type: none;
     padding-left: 0;
-    text-align: center; /* Center-aligns the list items */
+    text-align: center;
 }
 
 .navbar li {
@@ -31,12 +31,13 @@ body {
 .navbar a {
     text-decoration: none;
     color: #000;
-    transition: transform 0.1s ease, color 0.1s ease; /* Smooth transition */
+    transition: transform 0.1s ease, color 0.1s ease;
 }
 
 .navbar a:hover {
     color: #007bff;
-    transform: scale(1.8); /* Slightly enlarge the text on hover */
+    transform: scale(1.8);
+    text-decoration: none;
 }
 
 
@@ -45,7 +46,6 @@ h2 {
     /*color: #4c5c96;*/
     color: black;
     font-weight: bold;
-    /*font-weight: 700; !* You can adjust the weight as per the desired style *!*/
 }
 
 h1{
@@ -106,15 +106,15 @@ hr {
 }
 .project-header {
         display: flex;
-        align-items: baseline; /* Aligns the text and logo vertically */
+        align-items: baseline;
 }
 .project-header strong {
-        margin-right: 8px; /* Space between title and GitHub icon */
+        margin-right: 8px;
 }
 
 .project-header img {
         position: relative;
-        top: -2px; /* Moves the logo a little higher */
+        top: -2px;
 }
 
 .project-description {
@@ -131,7 +131,7 @@ hr {
         margin-left: 5px;
 }
 .skills-list p {
-        margin: 3px 0; /* Reduces vertical space between paragraphs */
+        margin: 3px 0;
 }
 
 .teaching-experience-list {
@@ -174,8 +174,8 @@ hr {
 }
 
 .icon-link {
-    margin-left: 10px; /* Increase space between icons */
-    margin-right: 10px; /* Increase space between icons */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -194,7 +194,7 @@ hr {
         z-index: 1000;
     }
     .navbar-visible {
-        display: block !important; /* Ensure the navbar is shown when this class is added */
+        display: block !important;
     }
 
     .navbar ul {
@@ -209,26 +209,25 @@ hr {
 
     .menu-icon {
         display: block;
-        font-size: 24px; /* Set the size of the hamburger icon */
+        font-size: 24px;
         cursor: pointer;
-        color: black; /* Set the color of the hamburger icon to black */
+        color: black;
         position: absolute;
         top: 10px;
         left: 10px;
         z-index: 1000;
-        background: none; /* Remove background color */
-        border: none; /* Remove any border */
-        padding: 0; /* Remove padding */
+        background: none;
+        border: none;
+        padding: 0;
     }
 }
 
 @media (min-width: 769px) {
     .menu-icon {
-        display: none; /* Hide menu icon on larger screens */
+        display: none;
     }
 }
 
-/* Styling for Download CV button */
 .btn-download-cv {
     display: inline-block;
     padding: 10px 20px;
@@ -248,19 +247,18 @@ hr {
 }
 
 html, body {
-    height: 100%; /* Ensure the body and HTML take up the full height of the viewport */
+    height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Additional styling for the container */
 .container {
     padding: 20px;
     max-width: 800px;
-    width: 100%; /* Ensures responsiveness */
-    box-sizing: border-box; /* Include padding in the container's total width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Scroll to Top Button */
@@ -277,11 +275,33 @@ html, body {
     font-size: 24px;
     border-radius: 50%;
     cursor: pointer;
-    display: none; /* Initially hidden */
-    z-index: 1000; /* Ensure it appears on top of other elements */
+    display: none;
+    z-index: 1000;
 }
 
-/* Hover effect for Scroll to Top button */
 .scroll-to-top:hover {
     background-color: #0056b3;
+}
+
+.btn-download-cv:hover{
+    text-decoration: none;
+}
+
+.icon-link {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.icon-link:hover {
+    transform: translateY(-5px); /* Moves the element 5px upwards */
+}
+
+.publications-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 5px;
+}
+.grades-list{
+    padding-left: 0;
+    margin-left: 20px;
 }
