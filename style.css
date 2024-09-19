@@ -1,0 +1,287 @@
+body {
+    font-family: "Raleway", sans-serif
+}
+
+body {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 200px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center; /* Center-aligns the list items */
+}
+
+.navbar li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.1s ease, color 0.1s ease; /* Smooth transition */
+}
+
+.navbar a:hover {
+    color: #007bff;
+    transform: scale(1.8); /* Slightly enlarge the text on hover */
+}
+
+
+h2 {
+    margin-top: 40px;
+    /*color: #4c5c96;*/
+    color: black;
+    font-weight: bold;
+    /*font-weight: 700; !* You can adjust the weight as per the desired style *!*/
+}
+
+h1{
+    font-weight: bolder;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background: #333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.education-section {
+        margin-top: 20px;
+}
+.education-item {
+        margin-bottom: 20px;
+}
+.education-header {
+        display: flex;
+        justify-content: space-between;
+}
+.education-details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+}
+.details-list {
+        margin-top: 10px;
+        padding-left: 20px;
+}
+.details-list li {
+        list-style-type: disc;
+}
+
+
+.projects-section {
+        margin-top: 20px;
+}
+.project-item {
+        margin-bottom: 20px;
+}
+.project-header {
+        display: flex;
+        align-items: baseline; /* Aligns the text and logo vertically */
+}
+.project-header strong {
+        margin-right: 8px; /* Space between title and GitHub icon */
+}
+
+.project-header img {
+        position: relative;
+        top: -2px; /* Moves the logo a little higher */
+}
+
+.project-description {
+        margin-top: 10px;
+        padding-left: 20px;
+}
+.project-description li {
+        list-style-type: disc;
+}
+
+.skills-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 5px;
+}
+.skills-list p {
+        margin: 3px 0; /* Reduces vertical space between paragraphs */
+}
+
+.teaching-experience-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 5px;
+}
+.teaching-experience-list li {
+        margin: 5px 0;
+}
+
+.honors-section p {
+        margin-left: 5px;
+        margin-bottom: 15px;
+}
+
+.languages-section p {
+     margin-left: -25px;
+     margin-bottom: 5px;
+}
+.extracurricular-section {
+        margin-top: 20px;
+}
+.activity-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 5px;
+}
+.activity-description {
+        list-style-type: none;
+        padding-left: 20px;
+        margin-top: 5px;
+}
+.activity-description li {
+        margin-bottom: 0;
+}
+
+.linkedin-icon {
+        filter: grayscale(100%);
+}
+
+.icon-link {
+    margin-left: 10px; /* Increase space between icons */
+    margin-right: 10px; /* Increase space between icons */
+}
+
+
+/* Hide the navbar for mobile */
+@media (max-width: 1024px) {
+    .navbar {
+        display: none; /* Hide navbar initially */
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 50%;
+        padding: 10px;
+        background-color: #f8f9fa;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    .navbar-visible {
+        display: block !important; /* Ensure the navbar is shown when this class is added */
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px; /* Set the size of the hamburger icon */
+        cursor: pointer;
+        color: black; /* Set the color of the hamburger icon to black */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        background: none; /* Remove background color */
+        border: none; /* Remove any border */
+        padding: 0; /* Remove padding */
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide menu icon on larger screens */
+    }
+}
+
+/* Styling for Download CV button */
+.btn-download-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px ;
+    margin-bottom: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+    background-color: #0056b3;
+}
+
+html, body {
+    height: 100%; /* Ensure the body and HTML take up the full height of the viewport */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional styling for the container */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    width: 100%; /* Ensures responsiveness */
+    box-sizing: border-box; /* Include padding in the container's total width */
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+/* Hover effect for Scroll to Top button */
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}

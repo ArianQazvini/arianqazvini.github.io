@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arian Qazvini's Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleNavbar()">
+        &#9776; <!-- Unicode for hamburger icon -->
+    </div>
+
+
+    <div class="navbar" id="navbar">
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#research-experience">Research Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#teaching-experience">Teaching Experience</a></li>
+            <li><a href="#honors">Honors and Awards</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#extracurricular">Extracurricular</a></li>
+        </ul>
+    </div>
+
+    <div class="container mt-5">
+        <div class="text-center mb-5 center-vertical">
+            <h1 style="margin-bottom: 3px; margin-top: 20px;">Arian Qazvini</h1>
+            <p style="color: gray; margin-bottom: 15px; font-size: 13px">Computer Engineering Student</p>
+
+            <!-- Download CV Button -->
+            <p>
+                <a href="path/to/cv.pdf" target="_blank" class="btn-download-cv">Download CV</a>
+            </p>
+
+
+            <p>
+                <a href="https://github.com/ArianQazvini" target="_blank" class="icon-link">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="30" height="30">
+                </a>
+
+                <a href="https://www.linkedin.com/in/arian-qazvini-1b26651b9/" target="_blank" class="icon-link">
+                    <img src="https://images.freeimages.com/fic/images/icons/2779/simple_icons/512/linkedin_512_black.png" alt="LinkedIn" width="30" height="30">
+                </a>
+
+                <a href="mailto:arianqazvini@gmail.com" class="icon-link">
+                    <img src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png" alt="Email" width="25" height="25">
+                </a>
+            </p>
+        </div>
+
+        <!-- Scroll to Top Arrow -->
+        <div id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+            &#8679; <!-- Unicode for up arrow icon -->
+        </div>
+
+<!--        <section>-->
+<!--            <h2>Research Interests</h2>-->
+<!--            <hr>-->
+<!--            <ul>-->
+<!--                <li>Natural Language Processing (NLP)</li>-->
+<!--                <li>Trustworthy ML</li>-->
+<!--                <li>Computer Vision</li>-->
+<!--                <li>Explainable AI</li>-->
+<!--            </ul>-->
+<!--        </section>-->
+
+        <section id="education">
+            <h2>Education</h2>
+            <hr>
+            <div class="education-section">
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="institution"><strong><a href="https://aut.ac.ir/" target="_blank">Amirkabir University of Technology (Tehran Polytechnic)</a></strong></span>
+                        <span class="location">Tehran</span>
+                    </div>
+                    <div class="education-details">
+                        <span class="degree"><em>B.Sc, Computer Engineering</em></span>
+                        <span class="date"><em>Sep 2020 - Current</em></span>
+                    </div>
+                    <ul class="details-list">
+                        <li><strong>GPA:</strong> 18.5/20 (<strong>3.87</strong>/4.0) - Last two years: <strong>18.78</strong>/20 (<strong>4.0</strong>/4.0)</li>
+                        <li><strong>Thesis:</strong> Design and Implementation of a Cross-Lingual Image Captioning Model for Persian and English Using Transfer Learning</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="institution"><strong><a href="http://mandegaralborz.sch.ir/" target="_blank">Alborz High School</a></strong></span>
+                        <span class="location">Tehran</span>
+                    </div>
+                    <div class="education-details">
+                        <span class="degree"><em>High School Diploma in Mathematics and Physics</em></span>
+                        <span class="date"><em>Sep 2017 - August 2020</em></span>
+                    </div>
+                    <ul class="details-list">
+                        <li><strong>GPA:</strong> 19.54/20</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <hr>
+            <ul>
+                <li>Seyedeh Fatemeh Ebrahimi, Karim Akhavan Azari, Amirmasoud Iravani, <strong>Arian Qazvini</strong>, Pouya Sadeghi, Zeinab Taghavi, Hossein Sameti. "<strong>Sharif-MGTD at SemEval-2024 Task 8: A Transformer-Based Approach to Detect Machine Generated Text</strong>". <a href="https://aclanthology.org/2024.semeval-1.85/">[Paper]</a></li>
+            </ul>
+        </section>
+
+
+        <section id="research-experience">
+            <h2>Research Experience</h2>
+            <hr>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong style="font-size: 1.2em"><a href="https://www.oist.jp/" target="_blank">Okinawa Institute of Science and Technology</a></strong><br>
+                            <i style="font-size: 0.8em;">Research Assistant under supervision of <a href="https://scholar.google.com/citations?user=jqHXvT0AAAAJ&hl=en" target="_blank">Dr. Mohammad Sabokrou</a></i>
+                            <ul style="margin-top: 15px;">
+                                <li>Collaborating in research on improving image classification models’ focus on primary objects rather than the background of the image.</li>
+                                <li>Exploring different white-box and black-box adversarial attacks.</li>
+                                <li>Investigating various regularization terms to modify the loss function, aiming to enhance its robustness against adversarial attacks. The paper is in progress.</li>
+                            </ul>
+                        </td>
+                        <td style="white-space: nowrap; font-size: 0.9em;"><i>May 2024 - Current</i></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="font-size: 1.2em"><a href="https://aut.ac.ir/" target="_blank">Amirkabir University of Technology (NLP Lab)</a></strong><br>
+                            <i style="font-size: 0.8em;">Research Assistant under supervision of <a href="https://scholar.google.nl/citations?user=N-WqXykAAAAJ&hl=en" target="_blank">Dr. Saeedeh Momtazi</a></i>
+                            <ul style="margin-top: 15px;">
+                                <li>Developing a cross-lingual image captioning model for Persian and English using transfer learning techniques.</li>
+                                <li>Focused on evaluating vision-language models and exploring fine-tuning methods like LoRA, QLoRA and GaLore, alongside exploring cross-lingual learning strategies. (Thesis)</li>
+                            </ul>
+                        </td>
+                        <td style="white-space: nowrap; font-size: 0.9em;"><i>Feb 2024 - Current</i></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="font-size: 1.2em;"><a href="https://en.sharif.ir/" target="_blank">Sharif University of Technology</a></strong><br>
+                            <i style="font-size: 0.8em;">Research Intern under supervision of <a href="https://scholar.google.com/citations?user=ebEhWZwAAAAJ&hl=en" target="_blank">Dr. Hossein Sameti</a></i>
+                            <ul style="margin-top: 15px;">
+                                <li>Researched on different methods for detecting machine-generated text from human-generated one. The paper was accepted at SemEval-2024.</li>
+                                <li>Fine-tuned a RoBERTa-base transformer.</li>
+                            </ul>
+                        </td>
+                        <td style="white-space: nowrap; font-size: 0.9em;"><i>Sep 2023 - Feb 2024</i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <hr>
+            <div class="projects-section">
+                <div class="project-item">
+                    <div class="project-header">
+                        <strong>GIT Fine-Tune</strong>
+                        <a href="https://github.com/ArianQazvini/GIT-Finetune" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" >
+                        </a>
+                    </div>
+                    <ul class="project-description">
+                        <p>Developed and compared normal fine-tuning and LoRA adaptation techniques on the GIT model for image captioning using the Flickr 8k dataset, with CIDEr, SPICE, and METEOR metrics used for evaluation.</p>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <strong>Image Captioning Using CNN and LSTM</strong>
+                        <a href="https://github.com/ArianQazvini/CNN-LSTM-ImageCaptioning" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" >
+                        </a>
+                    </div>
+                    <ul class="project-description">
+                        <p>Implemented an image captioning system utilizing VGG16 for visual features extraction and LSTM networks for caption generation.</p>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <strong>Information Retrieval Engine</strong>
+                        <a href="https://github.com/ArianQazvini/IR-SearchEngine" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20">
+                        </a>
+                    </div>
+                    <ul class="project-description">
+                        <p>Implemented a Persian text search engine for news articles using information retrieval techniques such as tokenization, normalization, stemming, and ranking based on TF-IDF weighted cosine similarity.</p>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <strong>ResNet18 Adversarial Attacks</strong>
+                        <a href="https://github.com/ArianQazvini/ResNet18-Adversarial-Attack" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" >
+                        </a>
+                    </div>
+                    <ul class="project-description">
+                        <p>Tested different adversarial attacks such as PGD, AutoAttack, FGSM, and C&W on a ResNet18 model trained on the RIVAL10 dataset and compared their attack success rates.</p>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <strong>Black-Box Adversarial Attack</strong>
+                        <a href="https://github.com/ArianQazvini/Black-Box-Attack" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" >
+                        </a>
+                    </div>
+                    <ul class="project-description">
+                        <p>Implemented a black-box adversarial attack using a ResNet50 surrogate model to target a ResNet18 victim model, with visualizations of clean and adversarial images using Guided Grad-CAM and Guided Backpropagation for explainability.</p>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <strong>Computational Intelligence Course Projects</strong>
+                        <a href="https://github.com/ArianQazvini/CI-Projects" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" >
+                        </a>
+                    </div>
+                    <ul class="project-description">
+                        <li>Programmed neural networks from scratch for house price prediction and binary classification for the MNIST dataset.</li>
+                        <li>Fuzzy logic-based controller for a self-driving car.</li>
+                        <li>Genetic Algorithm.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <hr>
+            <ul class="skills-list">
+                <p><strong>Programming Languages:</strong> C, Python, Java</p>
+                <p><strong>Libraries:</strong> PyTorch, Pandas, Matplotlib, Scikit-learn, Langchain</p>
+                <p><strong>Web Development:</strong> HTML/CSS, JavaScript, Django/Django REST</p>
+                <p><strong>Tools:</strong> LATEX, Docker, Git, Google Colab, VS Code, PyCharm, IntelliJ</p>
+                <p><strong>Database Management Systems:</strong> MySQL</p>
+            </ul>
+        </section>
+
+        <section id="teaching-experience">
+            <h2>Teaching Experience</h2>
+            <hr>
+            <ul class="teaching-experience-list">
+                <li>
+                    <strong>Applied Linear Algebra</strong>, <a href="https://scholar.google.com/citations?user=gxbTUfEAAAAJ&hl=en" target="_blank">Dr. Mazlaghani</a> - Spring 2024
+                </li>
+                <li>
+                    <strong>Data Mining</strong>, <a href="https://scholar.google.com/citations?user=Cl5tre8AAAAJ&hl=en" target="_blank">Dr. Nazerfard</a> - Spring 2024
+                </li>
+                <li>
+                    <strong>Operating Systems</strong>, <a href="https://www.researchgate.net/profile/Fatemeh-Ziaeetabar" target="_blank">Dr. Ziaeetabar</a> - Spring 2024
+                </li>
+                <li>
+                    <strong>Artificial Intelligence</strong>, <a href="https://scholar.google.co.jp/citations?user=6Za8HuYAAAAJ&hl=en" target="_blank">Dr. Javanmardi</a> - Spring 2024, Fall 2023, Spring 2023
+                </li>
+                <li>
+                    <strong>Microprocessor and Assembly</strong>, <a href="https://scholar.google.com/citations?user=PAZOYiAAAAAJ&hl=en" target="_blank">Dr. Farbeh</a> - Fall 2023
+                </li>
+                <li>
+                    <strong>Computer Architecture</strong>, <a href="https://scholar.google.com/citations?user=gJkJ9wUAAAAJ&hl=en" target="_blank">Dr. Cheshmikhani</a> - Spring 2023
+                </li>
+                <li>
+                    <strong>Applied Linear Algebra</strong>, <a href="https://scholar.google.com/citations?user=Cl5tre8AAAAJ&hl=en" target="_blank">Dr. Nazerfard</a> - Fall 2022
+                </li>
+                <li>
+                    <strong>Advanced Programming</strong>, <a href="https://scholar.google.ca/citations?user=oISEZIUAAAAJ&hl=en" target="_blank">Dr. Kalbasi</a> & <a href="https://scholar.google.com/citations?user=KaGpFx8AAAAJ&hl=en" target="_blank">Dr. Zeinali</a> - Spring 2022
+                </li>
+            </ul>
+        </section>
+
+        <section class="honors-section" id="honors">
+            <h2>Honors and Awards</h2>
+            <hr>
+            <p>Achieved 356th (239th regional) place among about 135K applicants in University Entrance Nationwide Exam (Konkour) for B.Sc in Math and Physics.</p>
+            <p>Achieved 423th (223rd regional) place among about 129K applicants in University Entrance Nationwide Exam (Konkour) in Foreign Languages - English.</p>
+        </section>
+
+
+        <section class="languages-section" id="languages">
+            <h2>Languages</h2>
+            <hr>
+            <ul>
+                <p>Persian: Native</p>
+                <p>English: Advanced (TOEFL ibt on October 16th)</p>
+            </ul>
+        </section>
+
+        <section class="extracurricular-section" id="extracurricular">
+            <h2>Extracurricular Activities</h2>
+            <hr>
+            <ul class="activity-list">
+                <li><strong>4<sup>th</sup> Amirkabir Artificial Intelligence Student Summit (AAISS) Head of Scientific Committee</strong></li>
+                <ul class="activity-description">
+                    <li>Participated in leading the scientific team in selecting and inviting presenters for the event</li>
+                </ul>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
