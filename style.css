@@ -306,3 +306,9 @@ html, body {
     padding-left: 0;
     margin-left: 20px;
 }
+
+.courses-section-list{
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 5px;
+}
